@@ -1,3 +1,4 @@
+import TableRow from "./Main.TableRow";
 import "styles/main.scss";
 
 function Main() {
@@ -94,6 +95,23 @@ function Main() {
                                 </svg>
                             </button>
                         </div>
+                    </div>
+                    <div className="table-header">
+                        <div id="orderID" className="column-head ch-left">
+                            Order ID
+                        </div>
+                        <div id="orderDate" className="column-head ch-left">
+                            Order date
+                        </div>
+                        <div id="orderAmount" className="column-head ch-right">
+                            Order amount
+                        </div>
+                        <div id="transactionFees" className="column-head ch-right">
+                            Transaction fees
+                        </div>
+                    </div>
+                    <div className="table-body">
+                        {Array.from({length: 20}, (_, i) => i + 1).map((num) => <TableRow key={num}/>)}
                     </div>
                 </div>
             </div>
