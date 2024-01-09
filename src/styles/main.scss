@@ -72,6 +72,9 @@ h2.head {
     .table-ft-wrapper {
         margin-top: 1.25rem;
         .table-ft {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
             search {
                 display: flex;
                 align-items: center;
@@ -101,13 +104,26 @@ h2.head {
                 }
             }
             .btns {
+                display: flex;
+                align-items: center;
+                gap: 0.75rem;
                 #sortCta {
+                    display: flex;
+                    gap: 0.38rem;
+                    align-items: center;
+                    padding: 0.38rem 0.75rem;
                     border-radius: 0.25rem;
                     border: 1px solid var(--black-85);
                     background: var(--black-100);
+                    color: var(--black-30);
+                    font-size: 1rem;
+                    line-height: 1.5rem; /* 150% */
                 }
                 #downloadCta {
-                    
+                    padding: 0.5rem;
+                    line-height: 0;
+                    border-radius: 0.25rem;
+                    border: 1px solid var(--black-85);
                 }
             }
         }
