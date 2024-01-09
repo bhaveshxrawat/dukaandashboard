@@ -1,0 +1,10 @@
+#root {
+  max-width: 1440px;
+  margin-inline: auto;
+  display: grid;
+  grid-template-areas: 
+  "aside header"
+  "aside main";
+  grid-template-columns: auto 1fr;
+  grid-template-rows: auto 1fr;
+}

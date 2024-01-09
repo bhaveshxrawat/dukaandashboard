@@ -1,0 +1,52 @@
+[
+    {
+        "id": 0,
+        "name": "Home"
+    },
+    {
+        "id": 1,
+        "name": "Orders"
+    },
+    {
+        "id": 2,
+        "name": "Products"
+    },
+    {
+        "id": 3,
+        "name": "Delivery"
+    },
+    {
+        "id": 4,
+        "name": "Marketing"
+    },
+    {
+        "id": 5,
+        "name": "Analytics"
+    },
+    {
+        "id": 6,
+        "name": "Payment"
+    },
+    {
+        "id": 7,
+        "name": "Tools"
+    },
+    {
+        "id": 8,
+        "name": "Discounts"
+    },
+    {
+        "id": 9,
+        "name": "Audience"
+    },
+    {
+        "id": 10,
+        "name": "Appearance"
+    },
+    {
+        "id": 11,
+        "name": "Plugins"
+    }
+]
+
+

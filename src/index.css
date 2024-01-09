@@ -1,0 +1,33 @@
+:root {
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    color: rgba(255, 255, 255, 0.87);
+    background-color: #fafafa;
+
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    --black-100: #FFFFFF;
+    --black-95: #F2F2F2;
+    --black-90: #E6E6E6;
+    --black-85: #D9D9D9;
+    --black-60: #999999;
+    --black-50: #808080;
+    --black-30: #4D4D4D;
+    --black-12: #1A181E;
+
+    --primary-blue: #146EB4;
+    --secondary-navbar: #1E2640;
+}
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+button {
+	all: unset;
+    cursor: pointer;
+}
