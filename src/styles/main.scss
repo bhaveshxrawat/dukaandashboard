@@ -1,8 +1,14 @@
+@import "styles/breakpoints.scss";
+
 main {
     overflow: auto;
     color: #1a1a1a;
     padding: 2rem;
     background-color: var(--Black-98, #fafafa);
+    grid-area: main;
+    @include respond-to(tablet) {
+        padding: 1rem;
+    }
 }
 h2.head {
     color: var(--black-12);
@@ -56,6 +62,10 @@ h2.head {
             border-radius: 0.5rem;
             background: var(--black-100);
             box-shadow: 0px 2px 6px 0px rgba(26, 24, 30, 0.04);
+            @include respond-to(tablet) {
+                padding: 1rem;
+                gap: 0.75rem;
+            }
             .bar-head {
                 color: var(--black-30);
                 line-height: 1.5rem; /* 150% */
@@ -64,7 +74,11 @@ h2.head {
                 color: var(--black-12);
                 font-size: 2rem;
                 font-weight: 500;
+                margin-top: auto;
                 line-height: 2.375rem; /* 118.75% */
+                @include respond-to(tablet) {
+                    font-size: 1.25rem;
+                }
             }
         }
     }
@@ -80,14 +94,22 @@ h2.head {
         box-shadow: 0px 2px 6px 0px rgba(26, 24, 30, 0.04);
         padding: 0.75rem;
         padding-bottom: 1.75rem;
+        overflow-x: auto;
         .table-ft {
             display: flex;
+            flex-wrap: wrap;
+            gap: 0.25rem;
             align-items: center;
             justify-content: space-between;
             search {
+                flex-basis: 15.5rem;
                 display: flex;
                 align-items: center;
+                @include respond-to(mobile) {
+                    flex-grow: 1;
+                }
                 form {
+                    width: 100%;
                     position: relative;
                     label {
                         position: absolute;
@@ -98,10 +120,11 @@ h2.head {
                     }
                 }
                 input[type="search"] {
-                    all: unset;
+                    border: none;
+                    font: inherit;
+                    width: 100%;
                     padding: 0.63rem 1rem;
                     padding-left: 2.37rem;
-                    width: 15.5rem;
                     border-radius: 0.25rem;
                     border: 1px solid var(--black-85);
                     background: var(--black-100);
@@ -116,6 +139,9 @@ h2.head {
                 display: flex;
                 align-items: center;
                 gap: 0.75rem;
+                @include respond-to(mobile) {
+                    gap: 0.25rem;
+                }
                 #sortCta {
                     display: flex;
                     gap: 0.38rem;
@@ -139,6 +165,9 @@ h2.head {
         .ch-right {
             justify-content: end;
             text-align: right;
+        }
+        table {
+            width: 100%;
         }
         .table-header {
             margin-top: 0.75rem;

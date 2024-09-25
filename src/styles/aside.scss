@@ -1,3 +1,5 @@
+@import "styles/breakpoints.scss";
+
 .glob-sidebar {
     background-color: var(--secondary-navbar);
     padding: 1rem 0.625rem;
@@ -5,6 +7,9 @@
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    @include respond-to(tablet) {
+        display: none;
+    }
     .user-det {
         display: flex;
         gap: 0.75rem;
